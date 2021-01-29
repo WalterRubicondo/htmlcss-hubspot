@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 /* LAYOUTS */
 .container {
@@ -41,18 +42,37 @@
   padding-right: 10px;
 }
 
-.pl-1 {
-  padding-left: 10px;
+/* LAYOUTS */
+
+/* UTILITY */
+.ml-1 {
+  margin-left: 10px;
 }
 
 .ml-2 {
   margin-left: 20px;
 }
 
-.ml-1 {
-  margin-left: 10px;
+.mt-4 {
+  margin-top: 40px;
 }
-/* LAYOUTS */
+
+.pl-1 {
+  padding-left: 10px;
+}
+
+.pb-3 {
+  padding-bottom: 35px;
+}
+
+.fs-1 {
+  font-size: .8em;
+}
+
+.fs-3 {
+  font-size: 3em;
+}
+/* UTILITY */
 
 /* BUTTONS */
 
@@ -70,6 +90,10 @@
 .btn-orange {
   background-color: rgb(254, 120, 90);
   color: rgb(255, 255, 255)
+}
+
+.btn-big {
+  padding: 18px 30px;
 }
 
 /* BUTTONS */
@@ -97,13 +121,13 @@ nav div ul li {
   display: inline;
 }
 
-nav div ul li a {
+header div a {
   text-decoration: none;
   color: rgb(50, 73, 91)
 }
 
 /* TOP NAV */
-
+/* BOTTOM NAV */
 .bottom-nav {
   height: 80px;
   margin-top: 80px;
@@ -113,4 +137,24 @@ nav div ul li a {
 .bottom-nav li {
   padding-left: 10px;
 }
+/* BOTTOM NAV */
+
+/* JUMBO */
+.bg-jumbo {
+  background-image: url(../img/jumbotron.png);
+  height: 695px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-jumbo {
+  width: 50%;
+  padding-top: 80px;
+}
+
+.text-jumbo p {
+  font-weight: 600;
+}
+/* JUMBO */
+
 /* HEADER */
