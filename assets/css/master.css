@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+
 /* LAYOUTS */
 .bg-grey {
   background-color: rgb(244, 249, 253);
@@ -21,7 +22,7 @@
 
 .bg-dgrey {
   background-color: rgb(50, 73, 91);
-  height: 200px;
+  color: rgb(255, 255, 255);
 }
 
 .container {
@@ -31,7 +32,7 @@
 
 .row {
   width: 100%;
-  margin: 0 -15px;
+  margin: 0 auto;
 }
 
 div.row:after {
@@ -52,10 +53,17 @@ div.row:after {
   width: 70%;
 }
 
+.clm-65 {
+  width: 65%;
+}
+
 .clm-50 {
   width: 50%;
 }
 
+.clm-35 {
+  width: 35%;
+}
 
 .clm-30 {
   width: 30%;
@@ -63,13 +71,8 @@ div.row:after {
 }
 
 .clm-25 {
-  width: 25%;
+  width: calc(100%/4);
 }
-
-.clm-20 {
-  width: 20%;
-}
-
 
 .fa-angle-down {
   cursor: pointer;
@@ -80,22 +83,22 @@ div.row:after {
   color: rgb(0, 164, 189)
 }
 
-.right-nav {
-  float: right;
-  text-align: right;
-}
-
-.left-nav {
-  float: left;
-}
-
 .divider {
   border-right: 2px solid rgb(0, 0, 0);
   padding-right: 10px;
 }
 
-.tx-alg {
-  text-align: center;
+nav div ul, main div ul, footer div ul {
+  list-style: none;
+}
+
+nav div ul li, main div.clm-75 ul li, footer div.clm-50 ul li {
+  display: inline;
+}
+
+header div a, main div a {
+  text-decoration: none;
+  color: rgb(50, 73, 91);
 }
 /* LAYOUTS */
 
@@ -144,6 +147,10 @@ div.row:after {
   padding-bottom: 35px;
 }
 
+.pt-6 {
+  padding-top: 60px;
+}
+
 .pt-4 {
   padding-top: 40px;
 }
@@ -162,6 +169,10 @@ div.row:after {
 
 .br-b {
   border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.tx-alg {
+  text-align: center;
 }
 /* UTILITY */
 
@@ -182,15 +193,17 @@ div.row:after {
   color: rgb(255, 255, 255)
 }
 
+.btn-contact {
+  background-color: rgb(194, 201, 206);
+  color: rgb(0, 0, 0);
+}
+
 .btn-big {
   padding: 18px 30px;
 }
-
 /* BUTTONS */
 
-
 /* HEADER */
-
 /* TOP NAV */
 .top-nav {
   position: fixed;
@@ -201,21 +214,15 @@ div.row:after {
   height: 80px;
   line-height: 80px;
 }
-
-nav div ul, main div ul {
-  list-style: none;
-}
-
-nav div ul li, main div.clm-75 ul li {
-  display: inline;
-}
-
-header div a, main div a {
-  text-decoration: none;
-  color: rgb(50, 73, 91);
-}
-
 /* TOP NAV */
+.right-nav {
+  float: right;
+  text-align: right;
+}
+
+.left-nav {
+  float: left;
+}
 /* BOTTOM NAV */
 .bottom-nav {
   height: 80px;
@@ -234,9 +241,7 @@ header div a, main div a {
 .logo {
   vertical-align: middle;
 }
-
 /* BOTTOM NAV */
-
 /* JUMBO */
 .bg-jumbo {
   background-image: url(../img/jumbotron.png);
@@ -253,12 +258,22 @@ header div a, main div a {
 .text-jumbo p {
   font-weight: 600;
 }
+
+.road {
+  position: relative;
+  top: 250px;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(175, 235, 228);
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
 /* JUMBO */
 /* HEADER */
 
 /* MAIN */
 /* MAIN TOP */
-.cube {
+.img-cube {
   display: block;
   margin: 0 auto;
   width: 250px;
@@ -277,14 +292,21 @@ header div a, main div a {
   margin-left: 50px;
 }
 
+.line-small {
+  width: 90%;
+  display: inline-block;
+  margin-bottom: 4px;
+  background: black;
+}
+
 main p {
   font-weight: 500;
   line-height: 30px;
   margin-bottom: 20px;
 }
 
-.prova {
-  width: 70%;
+.cubo {
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -328,20 +350,19 @@ main div.bg-white img {
 /* MAIN TOP */
 
 /* MAIN CENTER */
-
-.boh {
+.plus {
   display: block;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.boh::after {
+.plus:after {
   content: "\002B";
   padding-left: 5px;
 }
 
 main div.clm-25 img {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   margin-top: 20px;
 }
 /* MAIN CENTER */
@@ -357,10 +378,36 @@ main div.clm-75 img {
   text-align: center;
 }
 
-.prova2 {
+.img-right {
   width: 300px;
   float: right;
 }
-
 /* MAIN BOTTOM */
 /* MAIN */
+
+/* FOOTER */
+footer div a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+footer div ul li {
+  margin-bottom: 20px;
+}
+
+footer div ul li i {
+  padding-right: 25px;
+}
+
+.languages {
+  padding: 0 10px;
+}
+
+footer div.clm-50 ul {
+  float: right;
+}
+
+footer div.clm-50 ul li{
+  padding-left: 20px;
+}
+/* FOOTER */
