@@ -17,7 +17,8 @@
 
 .bg-white {
   background-color: rgb(255, 255, 255);
-  border: 2px solid grey;
+  box-shadow: 0px 0px 10px 1px rgb(206, 206, 206);
+  border-radius: 5px;
 }
 
 .bg-dgrey {
@@ -41,36 +42,36 @@ div.row:after {
   display: table;
 }
 
-[class^=clm-] {
+[class^=column-] {
   float: left;
 }
 
-.clm-75 {
+.column-75 {
   width: 75%;
 }
 
-.clm-70 {
+.column-70 {
   width: 70%;
 }
 
-.clm-65 {
+.column-65 {
   width: 65%;
 }
 
-.clm-50 {
+.column-50 {
   width: 50%;
 }
 
-.clm-35 {
+.column-35 {
   width: 35%;
 }
 
-.clm-30 {
+.column-30 {
   width: 30%;
   padding: 0 20px;
 }
 
-.clm-25 {
+.column-25 {
   width: calc(100%/4);
 }
 
@@ -92,7 +93,7 @@ nav div ul, main div ul, footer div ul {
   list-style: none;
 }
 
-nav div ul li, main div.clm-75 ul li, footer div.clm-50 ul li {
+nav div ul li, main div.column-75 ul li, footer div.column-50 ul li {
   display: inline;
 }
 
@@ -330,13 +331,12 @@ main div.bg-white ul li:before {
   margin-right: 15px;
 }
 
-main div.clm-30 ul {
+main div.column-30 ul {
   text-align: left;
 }
 
-.pdmg {
+main div.row:nth-child(2) {
   padding: 60px;
-  margin-bottom: 40px;
 }
 
 main div.bg-white img {
@@ -361,14 +361,14 @@ main div.bg-white img {
   padding-left: 5px;
 }
 
-main div.clm-25 img {
+main div.column-25 img {
   margin-bottom: 30px;
   margin-top: 20px;
 }
 /* MAIN CENTER */
 
 /* MAIN BOTTOM */
-main div.clm-75 img {
+main div.column-75 img {
   vertical-align: middle;
   width: 15%;
   height: auto;
@@ -403,11 +403,11 @@ footer div ul li i {
   padding: 0 10px;
 }
 
-footer div.clm-50 ul {
+footer div.column-50 ul {
   float: right;
 }
 
-footer div.clm-50 ul li{
+footer div.column-50 ul li{
   padding-left: 20px;
 }
 /* FOOTER */
